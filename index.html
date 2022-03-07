@@ -11,8 +11,11 @@
     
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
+        {% block head %}        
+           
         <title>{% block title %}{% endblock %}This is {{ Marcus }} Website</title>
     
+        {% endblock %}
 
 </head>
 <body>
